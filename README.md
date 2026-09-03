@@ -116,9 +116,9 @@
 
 ## <img src="https://api.iconify.design/tabler:chart-bar.svg?color=%23A855F7" width="22" align="absmiddle"> GitHub Stats
 
-![](https://github-readme-stats.shion.dev/api?username=waos-png&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=waos-png&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=waos-png&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.shion.dev/api?username=JuanVelasco-tsx&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://streak-stats.demolab.com/?user=JuanVelasco-tsx&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=JuanVelasco-tsx&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 <img width="100%" height="6" src="assets/purple-line.gif">
 
