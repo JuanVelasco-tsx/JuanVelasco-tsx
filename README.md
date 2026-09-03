@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/ADSO_SENA_Armenia-9333EA?style=for-the-badge&logoColor=white" />
 </p>
 
-<img src="https://komarev.com/ghpvc/?username=waos-png&style=for-the-badge&color=A855F7&label=PROFILE+VIEWS" />
+<img src="https://komarev.com/ghpvc/?username=JuanVelasco-tsx&style=for-the-badge&color=A855F7&label=PROFILE+VIEWS" />
 
 </div>
 
@@ -93,7 +93,7 @@
         <img src="https://skillicons.dev/icons?i=angular,java,spring,postgresql,docker" height="28"/>
       </a>
       <br/><br/>
-      <a href="https://github.com/waos-png/Bookit">
+      <a href="https://github.com/JuanVelasco-tsx/Bookit">
         <img src="https://img.shields.io/badge/Repositorio-7E22CE?style=flat-square&logo=github&logoColor=white"/>
       </a>
     </td>
@@ -105,7 +105,7 @@
         <img src="https://skillicons.dev/icons?i=nextjs,ts,java,spring,postgresql" height="28"/>
       </a>
       <br/><br/>
-      <a href="https://github.com/waos-png/Neocomerce">
+      <a href="https://github.com/JuanVelasco-tsx/Neocomerce">
         <img src="https://img.shields.io/badge/Repositorio-7E22CE?style=flat-square&logo=github&logoColor=white"/>
       </a>
     </td>
