@@ -132,12 +132,11 @@
 <img width="100%" height="6" src="assets/purple-line.gif">
 
 ## <img src="https://api.iconify.design/tabler:chart-bar.svg?color=%23A855F7" width="22" align="absmiddle"> GitHub Stats
-<!-- TODO: reemplazar YOUR-INSTANCE tras deploy en Vercel -->
 <div align="center">
 <img width="100%" src="https://streak-stats.demolab.com/?user=JuanVelasco-tsx&hide_border=true&background=0A101F&stroke=A855F7&ring=7E22CE&fire=9333EA&currStreakLabel=A855F7&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=A855F7&card_width=1180" alt="streak" />
 <br/>
-<img width="49%" src="https://YOUR-INSTANCE.vercel.app/api?username=JuanVelasco-tsx&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=A855F7&icon_color=7E22CE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="stats" />
-<img width="49%" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=JuanVelasco-tsx&layout=compact&langs_count=8&hide_border=true&title_color=A855F7&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="top langs" />
+<img width="49%" src="https://github-readme-stats-one-phi-25.vercel.app/api?username=JuanVelasco-tsx&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=A855F7&icon_color=7E22CE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="stats" />
+<img width="49%" src="https://github-readme-stats-one-phi-25.vercel.app/api/top-langs/?username=JuanVelasco-tsx&layout=compact&langs_count=8&hide_border=true&title_color=A855F7&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="top langs" />
 </div>
 
 <img width="100%" height="6" src="assets/purple-line.gif">
