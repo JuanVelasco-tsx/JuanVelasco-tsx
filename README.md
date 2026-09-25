@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=28&pause=1000&color=A855F7&center=true&vCenter=true&width=600&height=60&lines=Juan+Velasco;Full+Stack+Developer;Angular+%E2%80%A2+Next.js+%E2%80%A2+Java+%E2%80%A2+Spring+Boot;Building+modern+web+applications" alt="Typing SVG" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner/dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner/light.svg" />
+  <img alt="Juan Velasco — Backend / Full Stack Developer" src="assets/banner/light.svg" width="100%" />
+</picture>
 
 <p>
   <img src="https://img.shields.io/badge/Full_Stack_Developer-A855F7?style=for-the-badge&logoColor=white" />

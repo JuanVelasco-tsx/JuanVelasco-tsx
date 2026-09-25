@@ -1,0 +1,117 @@
+{
+  "seed": 7,
+  "loop_seconds": 16,
+  "timeline": {
+    "scan": [0.2, 2.2],
+    "hit": 3.0,
+    "crack": [3.05, 4.6],
+    "pulse": [4.6, 7.0],
+    "dissolve": [7.0, 7.9],
+    "moves": [[7.9, 8.7], [9.6, 10.3], [11.2, 11.9], [13.3, 14.2]],
+    "v3_return": [14.6, 15.2],
+    "particles_out": [14.9, 15.5],
+    "stagger": 0.3
+  },
+  "output": {
+    "dark": "assets/banner/dark.svg",
+    "light": "assets/banner/light.svg"
+  },
+  "font_family": "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace",
+
+  "terminal": {
+    "title": "juanvelasco-tsx@github: ~ — neofetch",
+    "portrait_label": "VISUAL.MAP",
+    "info_label": "SYSTEM.INFO",
+    "header": "juan@velasco",
+    "value_column": 15,
+    "rows": [
+      ["Nombre", "Juan Velasco"],
+      ["Rol", "Backend / Full Stack Developer"],
+      ["Origen", "Armenia, Quindío · CO"],
+      ["Formación", "Tecnólogo ADSO · SENA"],
+      ["Estado", "Buscando etapa práctica"],
+      ["Lenguajes", "Java · TypeScript · Python · SQL"],
+      ["Backend", "Spring Boot · Spring Security · JWT · REST"],
+      ["Frontend", "Angular · React · Next.js · Tailwind"],
+      ["Datos", "PostgreSQL · MySQL · Flyway"],
+      ["Escritorio", "Electron · Node.js"],
+      ["DevOps", "Git · Docker · Railway · Linux"],
+      ["IA", "Claude Code · Kiro"],
+      ["Email", "velascoduquejuanmanuel@gmail.com"],
+      ["LinkedIn", "in/juan-velasco-15914641a"]
+    ],
+    "live_label": "LIVE",
+    "footer_text": "open to work",
+    "status_labels": {
+      "stable": "stable",
+      "fractured": "fractured",
+      "particles": "dissolving → particles"
+    }
+  },
+
+  "portrait": {
+    "v1": "assets/banner/img_propia_v1.png",
+    "v3": "assets/banner/img_propia_v3_gpt.png",
+    "v3_align": { "scale": 0.84, "dx": 96, "dy": 50 },
+    "crop": [40, 0, 1214, 1254],
+    "grid": [186, 199],
+    "gamma_v1": 0.9,
+    "gamma_v3": 0.72,
+    "levels": [0.1, 0.9],
+    "crack_center": [640, 935],
+    "scan_bands": 30,
+    "dissolve_groups": 10
+  },
+
+  "particles": {
+    "count": 900,
+    "logos": [
+      { "name": "angular", "svg": "assets/banner/icons/angular.svg", "size": 330 },
+      { "name": "typescript", "svg": "assets/banner/icons/typescript.svg", "size": 330 },
+      { "name": "react", "svg": "assets/banner/icons/react.svg", "size": 360 }
+    ]
+  },
+
+  "themes": {
+    "dark": {
+      "bg": "#0D0818",
+      "bg2": "#120A22",
+      "titlebar": "#120A22",
+      "divider": "#2A1A45",
+      "window_dots": ["#7E22CE", "#A855F7", "#E9D5FF"],
+      "title_text": "#C084FC",
+      "muted": "#6B4F8F",
+      "guide_dots": "#4A3566",
+      "panel_bg": "#120A22",
+      "panel_stroke": "#3B2463",
+      "labels": "#C084FC",
+      "values": "#F5F3FF",
+      "header": "#E9D5FF",
+      "accent": "#A855F7",
+      "border": ["#A855F7", "#9333EA", "#7E22CE", "#C084FC"],
+      "tones": ["#7E22CE", "#A855F7", "#E9D5FF"],
+      "particle_logo": "#E9D5FF",
+      "flash": "#E9D5FF"
+    },
+    "light": {
+      "bg": "#FFFFFF",
+      "bg2": "#FFFFFF",
+      "titlebar": "#FAF5FF",
+      "divider": "#EDE4FA",
+      "window_dots": ["#7E22CE", "#9333EA", "#C084FC"],
+      "title_text": "#7E22CE",
+      "muted": "#9A86B8",
+      "guide_dots": "#D6C6EE",
+      "panel_bg": "#FDFBFF",
+      "panel_stroke": "#E4D4FA",
+      "labels": "#7E22CE",
+      "values": "#1E1033",
+      "header": "#7E22CE",
+      "accent": "#9333EA",
+      "border": ["#9333EA", "#7E22CE", "#A855F7", "#C084FC"],
+      "tones": ["#E9D5FF", "#A855F7", "#7E22CE"],
+      "particle_logo": "#7E22CE",
+      "flash": "#C084FC"
+    }
+  }
+}

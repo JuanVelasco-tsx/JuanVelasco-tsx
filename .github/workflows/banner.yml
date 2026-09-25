@@ -1,0 +1,51 @@
+name: Generate banner
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/banner/**"
+      - "assets/banner/**"
+      - "!assets/banner/dark.svg"
+      - "!assets/banner/light.svg"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: banner
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/banner/requirements.txt
+
+      - name: Install cairo
+        run: sudo apt-get update && sudo apt-get install -y libcairo2
+
+      - name: Install dependencies
+        run: pip install -r scripts/banner/requirements.txt
+
+      - name: Generate dark.svg / light.svg
+        run: python scripts/banner/generate_banner.py
+
+      - name: Commit banner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/banner/dark.svg assets/banner/light.svg
+          if git diff --cached --quiet; then
+            echo "Banner sin cambios"
+          else
+            git commit -m "chore(banner): regenerate dark/light SVG [skip ci]"
+            git push origin HEAD:main
+          fi
