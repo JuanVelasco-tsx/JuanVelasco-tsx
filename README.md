@@ -20,62 +20,6 @@
 
 <img width="100%" height="6" src="assets/purple-line.gif">
 
-## <img src="https://api.iconify.design/tabler:code.svg?color=%23A855F7" width="20" align="absmiddle"> Sobre mí
-
-- <img src="https://api.iconify.design/tabler:server.svg?color=%23A855F7" width="20" align="absmiddle"> **Backend:** Java, Spring Boot, Spring Security, JWT, APIs REST y documentación con OpenAPI/Swagger
-- <img src="https://api.iconify.design/tabler:brand-angular.svg?color=%23A855F7" width="20" align="absmiddle"> **Frontend:** Angular (SSR, NgRx), React, Next.js, Tailwind CSS y TypeScript
-- <img src="https://api.iconify.design/tabler:database.svg?color=%23A855F7" width="20" align="absmiddle"> **Bases de datos:** PostgreSQL, MySQL, Flyway (migraciones) y SQLAlchemy 2.0 async con asyncpg
-- <img src="https://api.iconify.design/tabler:settings.svg?color=%23A855F7" width="20" align="absmiddle"> **DevOps:** Git (ramas, merge, worktrees), Docker, Docker Compose, Railway, versionado semántico y Linux
-- <img src="https://api.iconify.design/tabler:shield-lock.svg?color=%23A855F7" width="20" align="absmiddle"> **Seguridad:** JWT, control de acceso por roles (RBAC) y firma de código (signtool, PFX, SHA-256 + sellado de tiempo)
-- <img src="https://api.iconify.design/tabler:brand-python.svg?color=%23A855F7" width="20" align="absmiddle"> **Python** (nivel intermedio) y **discord.py** (async)
-- <img src="https://api.iconify.design/tabler:refresh.svg?color=%23A855F7" width="20" align="absmiddle"> **En aprendizaje:** CI/CD con GitHub Actions
-- <img src="https://api.iconify.design/tabler:school.svg?color=%23A855F7" width="20" align="absmiddle"> Tecnólogo en **ADSO** — SENA, Armenia, Quindío 🇨🇴
-- <img src="https://api.iconify.design/tabler:language.svg?color=%23A855F7" width="20" align="absmiddle"> **Inglés Técnico** (Desarrollo de Software)
-
-<img width="100%" height="6" src="assets/purple-line.gif">
-
-## <img src="https://api.iconify.design/tabler:stack-2.svg?color=%23A855F7" width="22" align="absmiddle"> Tech Stack & Workflow
-
-<table align="center" border="0" cellspacing="0" cellpadding="12">
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <h3><img src="https://api.iconify.design/simple-icons:java.svg?color=%23A855F7" width="20" align="absmiddle"> Backend & DB</h3>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=java,spring,python,nodejs,postgresql,mysql" />
-      </a>
-      <p align="center">
-        <img src="https://img.shields.io/badge/JWT-7E22CE?style=flat-square&logo=jsonwebtokens&logoColor=white" />
-        <img src="https://img.shields.io/badge/Swagger-9333EA?style=flat-square&logo=swagger&logoColor=white" />
-        <img src="https://img.shields.io/badge/Flyway-A855F7?style=flat-square&logo=flyway&logoColor=white" />
-        <img src="https://img.shields.io/badge/discord.py-7E22CE?style=flat-square&logo=discord&logoColor=white" />
-      </p>
-      <h3><img src="https://api.iconify.design/simple-icons:angular.svg?color=%23A855F7" width="20" align="absmiddle"> Frontend</h3>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=html,css,js,ts,angular,react,nextjs,tailwind" />
-      </a>
-    </td>
-    <td align="center" valign="top" width="50%">
-      <h3><img src="https://api.iconify.design/tabler:settings.svg?color=%23A855F7" width="20" align="absmiddle"> DevOps & Tools</h3>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=git,github,docker,linux,electron,postman" />
-      </a>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Railway-9333EA?style=flat-square&logo=railway&logoColor=white" />
-        <img src="https://img.shields.io/badge/GitHub_Actions-A855F7?style=flat-square&logo=githubactions&logoColor=white" />
-      </p>
-      <h3><img src="https://api.iconify.design/tabler:users.svg?color=%23A855F7" width="20" align="absmiddle"> Project Management</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Scrum-7E22CE?style=flat-square&logoColor=white" />
-        <img src="https://img.shields.io/badge/Jira-9333EA?style=flat-square&logo=jira&logoColor=white" />
-        <img src="https://img.shields.io/badge/ClickUp-A855F7?style=flat-square&logo=clickup&logoColor=white" />
-        <img src="https://img.shields.io/badge/Trello-C084FC?style=flat-square&logo=trello&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-</table>
-
-<img width="100%" height="6" src="assets/purple-line.gif">
-
 ## <img src="https://api.iconify.design/tabler:rocket.svg?color=%23A855F7" width="22" align="absmiddle"> Proyectos y Experiencia
 
 <table align="center" border="0" cellspacing="0" cellpadding="0">
