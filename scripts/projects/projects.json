@@ -1,0 +1,68 @@
+{
+  "raw_base": "https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects",
+
+  "headers": [
+    { "slug": "proyectos", "path": "~/proyectos", "command": "ls -la" },
+    { "slug": "actividad", "path": "~/actividad", "command": "git log --graph" }
+  ],
+
+  "projects": [
+    {
+      "slug": "neogaming",
+      "name": "NeoGaming",
+      "path": "~/proyectos/neogaming",
+      "subtitle": "Marketplace gamer · proyecto formativo SENA · equipo de 4",
+      "bullets": [
+        "13 módulos funcionales y 27 controladores REST, desplegado en Railway",
+        "Fundé el repo base, la estructura inicial y la documentación técnica",
+        "Líder de QA: más de 40 incidencias documentadas y priorizadas"
+      ],
+      "chips": ["Angular 21", "Spring Boot 4", "PostgreSQL", "Tailwind", "JWT"],
+      "link": "https://github.com/yuseth289/front-neo",
+      "repos": ["yuseth289/front-neo", "yuseth289/Backend-Neogamin-"],
+      "rows": [["estado", "finalizado"], ["periodo", "oct 2025 – jul 2026"]],
+      "fallback": {
+        "pushed_at": "2026-07-01T04:42:13Z",
+        "languages": { "TypeScript": 1107793, "Java": 718038, "Python": 98270, "HTML": 56997, "CSS": 20024, "Shell": 9480, "Dockerfile": 2012 }
+      }
+    },
+    {
+      "slug": "versusprep",
+      "name": "L4D2 Versus Addon Manager",
+      "path": "~/proyectos/versusprep",
+      "subtitle": "App de escritorio · Windows · proyecto personal",
+      "bullets": [
+        "Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus",
+        "Interfaz rediseñada para usuarios sin experiencia técnica",
+        "Ejecutable firmado con signtool (SHA-256 + sellado de tiempo)"
+      ],
+      "chips": ["Electron", "Node.js", "TypeScript"],
+      "link": "https://github.com/JuanVelasco-tsx/VersusPrep",
+      "repos": ["JuanVelasco-tsx/VersusPrep"],
+      "rows": [["estado", "beta"], ["versión", "1.0.0-beta"]],
+      "fallback": {
+        "pushed_at": "2026-09-15T23:02:51Z",
+        "languages": { "TypeScript": 726982 }
+      }
+    },
+    {
+      "slug": "eito-bot",
+      "name": "EITO Bot",
+      "path": "~/proyectos/eito-bot",
+      "subtitle": "Bot de Discord para comunidad gaming · 24/7 en Railway",
+      "bullets": [
+        "Moderación, niveles/XP, roles por reacción y canales automáticos",
+        "Persistencia migrada de JSON a PostgreSQL con SQLAlchemy 2.0 async",
+        "Multi-servidor sin pérdida de datos entre redeploys, con RBAC"
+      ],
+      "chips": ["Python 3.12", "discord.py", "PostgreSQL", "SQLAlchemy", "Railway"],
+      "link": "https://github.com/JuanVelasco-tsx/Eito-bot-dc",
+      "repos": ["JuanVelasco-tsx/Eito-bot-dc"],
+      "rows": [["estado", "en producción"], ["despliegue", "Railway 24/7"]],
+      "fallback": {
+        "pushed_at": "2026-09-20T00:13:29Z",
+        "languages": { "Python": 73386, "Procfile": 33 }
+      }
+    }
+  ]
+}

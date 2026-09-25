@@ -1,0 +1,44 @@
+name: Generate project cards
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/projects/**"
+      - "scripts/shared/**"
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: projects
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate cards and section headers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/projects/generate_projects.py dist
+
+      - name: Publish to projects branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: projects
+          build_dir: dist
+          keep_history: false
+          jekyll: false
+          commit_message: "chore(projects): update cards [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
