@@ -7,66 +7,106 @@
 </picture>
 
 <p>
-  <img src="https://img.shields.io/badge/Full_Stack_Developer-A855F7?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Angular_%7C_Next.js-7E22CE?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/ADSO_SENA_Armenia-9333EA?style=for-the-badge&logoColor=white" />
+  <a href="https://www.linkedin.com/in/juan-velasco-15914641a">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNDMDg0RkMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBkPSJNOCAxMXY1bTAtOHYuMDFNMTIgMTZ2LTVtNCA1di0zYTIgMiAwIDEgMC00IDAiLz48cGF0aCBkPSJNMyA3YTQgNCAwIDAgMSA0LTRoMTBhNCA0IDAgMCAxIDQgNHYxMGE0IDQgMCAwIDEtNCA0SDdhNCA0IDAgMCAxLTQtNHoiLz48L2c%2BPC9zdmc%2B&logoColor=C084FC" />
+  </a>
+  &nbsp;
+  <a href="mailto:velascoduquejuanmanuel@gmail.com">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=gmail&logoColor=C084FC" />
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/juanvelasco.tsx">
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=instagram&logoColor=C084FC" />
+  </a>
 </p>
-
-<img src="https://komarev.com/ghpvc/?username=JuanVelasco-tsx&style=for-the-badge&color=A855F7&label=PROFILE+VIEWS" />
 
 </div>
 
-> Tecnólogo en **Análisis y Desarrollo de Software (ADSO)** en el SENA, Armenia, Quindío 🇨🇴. Etapa lectiva finalizada en julio de 2026 y **en búsqueda de etapa práctica** como desarrollador **Backend** o **Full Stack**. Construyo aplicaciones con **Java y Spring Boot** en el backend y **Angular / React / Next.js** en el frontend, trabajando en equipo con Git y metodología Scrum.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/header-proyectos-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/header-proyectos-light.svg" />
+  <img alt="~/proyectos $ ls -la" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/header-proyectos-light.svg" width="100%" height="48" />
+</picture>
 
-<img width="100%" height="6" src="assets/purple-line.gif">
+<a href="https://github.com/yuseth289/front-neo">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-light.svg" />
+  <img alt="NeoGaming — Marketplace de productos gamer" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-light.svg" width="100%" />
+</picture>
+</a>
 
-## <img src="https://api.iconify.design/tabler:rocket.svg?color=%23A855F7" width="22" align="absmiddle"> Proyectos y Experiencia
+<details>
+<summary>Ver detalle</summary>
 
-<table align="center" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td colspan="2" valign="top" style="padding: 12px; border-bottom: 1px solid #2d333b;">
-      <h3><img src="https://api.iconify.design/tabler:users-group.svg?color=%23A855F7" width="20" align="absmiddle"> NeoGaming — Marketplace de productos gamer</h3>
-      <p>Proyecto formativo del SENA en equipo de 4 desarrolladores con metodología <strong>Scrum</strong> (octubre 2025 – julio 2026). Fundé el repositorio base, definí la estructura inicial y la documentación técnica. La plataforma cuenta con <strong>13 módulos funcionales</strong> (autenticación, carrito, checkout, paneles de administrador y vendedor, chat, reseñas, etc.) y <strong>27 controladores REST</strong>, desplegada en Railway.</p>
-      <p><strong>Backend:</strong> Spring Boot 4 · Spring Security · JWT · PostgreSQL · Flyway · OpenAPI/Swagger<br/><strong>Frontend:</strong> Angular 21 (SSR, NgRx) · Tailwind CSS v4</p>
-      <p><strong>Liderazgo de QA:</strong> más de 40 incidencias documentadas y priorizadas (Mercado Pago, stock/inventario, panel de administración, catálogo y asistente IA de publicación).</p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=angular,spring,postgresql,tailwind,git,github" height="28"/>
-      </a>
-      <br/><br/>
-      <a href="https://github.com/yuseth289/front-neo">
-        <img src="https://img.shields.io/badge/Frontend_Repo-7E22CE?style=flat-square&logo=github&logoColor=white"/>
-      </a>
-      &nbsp;
-      <a href="https://github.com/yuseth289/Backend-Neogamin-">
-        <img src="https://img.shields.io/badge/Backend_Repo-9333EA?style=flat-square&logo=github&logoColor=white"/>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top" style="padding: 12px;">
-      <h3><img src="https://api.iconify.design/tabler:device-desktop.svg?color=%23A855F7" width="20" align="absmiddle"> L4D2 Versus Addon Manager</h3>
-      <p>Aplicación de escritorio personal (2026 – actualidad, versión <strong>1.0.0-beta</strong> publicada para la comunidad). Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus, eliminando el proceso manual de extraer y reconstruir VPKs. Interfaz rediseñada para usuarios sin experiencia técnica y firmada digitalmente con signtool (SHA-256 + sellado de tiempo).</p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=electron,nodejs,js,git" height="28"/>
-      </a>
-      <br/><br/>
-      <a href="https://github.com/JuanVelasco-tsx/VersusPrep">
-        <img src="https://img.shields.io/badge/Repositorio-7E22CE?style=flat-square&logo=github&logoColor=white"/>
-      </a>
-    </td>
-    <td width="50%" valign="top" style="padding: 12px;">
-      <h3><img src="https://api.iconify.design/tabler:robot.svg?color=%23A855F7" width="20" align="absmiddle"> EITO Bot — Bot de Discord para comunidad gaming</h3>
-      <p>Bot personal en Python 3.12 + discord.py, desplegado 24/7 en Railway. Moderación (ban, kick, mute, advertencias), sistema de niveles/XP, roles por reacción y creación automática de canales, categorías y roles. Migré la persistencia de JSON a PostgreSQL con SQLAlchemy 2.0 async + asyncpg (multi-servidor, sin pérdida de datos entre redeploys) e implementé RBAC para canales restringidos.</p>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=python,postgresql,discord,docker" height="28"/>
-      </a>
-    </td>
-  </tr>
-</table>
+<p>Proyecto formativo del SENA en equipo de 4 desarrolladores con metodología <strong>Scrum</strong> (octubre 2025 – julio 2026). Fundé el repositorio base, definí la estructura inicial y la documentación técnica. La plataforma cuenta con <strong>13 módulos funcionales</strong> (autenticación, carrito, checkout, paneles de administrador y vendedor, chat, reseñas, etc.) y <strong>27 controladores REST</strong>, desplegada en Railway.</p>
 
-<img width="100%" height="6" src="assets/purple-line.gif">
+<p><strong>Backend:</strong> Spring Boot 4 · Spring Security · JWT · PostgreSQL · Flyway · OpenAPI/Swagger<br/><strong>Frontend:</strong> Angular 21 (SSR, NgRx) · Tailwind CSS v4</p>
+
+<p><strong>Liderazgo de QA:</strong> más de 40 incidencias documentadas y priorizadas (Mercado Pago, stock/inventario, panel de administración, catálogo y asistente IA de publicación).</p>
+
+<p>
+  <a href="https://github.com/yuseth289/front-neo">
+    <img alt="Frontend" src="https://img.shields.io/badge/Frontend-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=github&logoColor=C084FC" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/yuseth289/Backend-Neogamin-">
+    <img alt="Backend" src="https://img.shields.io/badge/Backend-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=github&logoColor=C084FC" />
+  </a>
+</p>
+
+</details>
+
+<a href="https://github.com/JuanVelasco-tsx/VersusPrep">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-light.svg" />
+  <img alt="L4D2 Versus Addon Manager" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-light.svg" width="100%" />
+</picture>
+</a>
+
+<details>
+<summary>Ver detalle</summary>
+
+<p>Aplicación de escritorio personal (2026 – actualidad, versión <strong>1.0.0-beta</strong> publicada para la comunidad). Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus, eliminando el proceso manual de extraer y reconstruir VPKs. Interfaz rediseñada para usuarios sin experiencia técnica y firmada digitalmente con signtool (SHA-256 + sellado de tiempo).</p>
+
+<p>
+  <a href="https://github.com/JuanVelasco-tsx/VersusPrep">
+    <img alt="Repositorio" src="https://img.shields.io/badge/Repositorio-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=github&logoColor=C084FC" />
+  </a>
+</p>
+
+</details>
+
+<a href="https://github.com/JuanVelasco-tsx/Eito-bot-dc">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-light.svg" />
+  <img alt="EITO Bot — Bot de Discord para comunidad gaming" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-light.svg" width="100%" />
+</picture>
+</a>
+
+<details>
+<summary>Ver detalle</summary>
+
+<p>Bot personal en Python 3.12 + discord.py, desplegado 24/7 en Railway. Moderación (ban, kick, mute, advertencias), sistema de niveles/XP, roles por reacción y creación automática de canales, categorías y roles. Migré la persistencia de JSON a PostgreSQL con SQLAlchemy 2.0 async + asyncpg (multi-servidor, sin pérdida de datos entre redeploys) e implementé RBAC para canales restringidos.</p>
+
+<p>
+  <a href="https://github.com/JuanVelasco-tsx/Eito-bot-dc">
+    <img alt="Repositorio" src="https://img.shields.io/badge/Repositorio-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=github&logoColor=C084FC" />
+  </a>
+</p>
+
+</details>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/header-actividad-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/header-actividad-light.svg" />
+  <img alt="~/actividad $ git log --graph" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/header-actividad-light.svg" width="100%" height="48" />
+</picture>
 
 <div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)"
     srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/output/github-snake-dark.svg" />
@@ -75,36 +115,11 @@
   <img alt="Snake eating my contributions"
     src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/output/github-snake.svg" />
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-one-phi-25.vercel.app/api?username=JuanVelasco-tsx&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide=stars%2Cissues&hide_border=true&bg_color=0D0818&title_color=A855F7&icon_color=C084FC&text_color=F5F3FF" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-one-phi-25.vercel.app/api?username=JuanVelasco-tsx&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide=stars%2Cissues&hide_border=true&bg_color=FFFFFF&title_color=7E22CE&icon_color=9333EA&text_color=1E1033" />
+  <img alt="GitHub stats" src="https://github-readme-stats-one-phi-25.vercel.app/api?username=JuanVelasco-tsx&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide=stars%2Cissues&hide_border=true&bg_color=FFFFFF&title_color=7E22CE&icon_color=9333EA&text_color=1E1033" />
+</picture>
+
 </div>
-
-<img width="100%" height="6" src="assets/purple-line.gif">
-
-## <img src="https://api.iconify.design/tabler:chart-bar.svg?color=%23A855F7" width="22" align="absmiddle"> GitHub Stats
-<div align="center">
-<img width="100%" src="https://streak-stats.demolab.com/?user=JuanVelasco-tsx&hide_border=true&background=0A101F&stroke=A855F7&ring=7E22CE&fire=9333EA&currStreakLabel=A855F7&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=A855F7&card_width=1180" alt="streak" />
-<br/>
-<img width="49%" src="https://github-readme-stats-one-phi-25.vercel.app/api?username=JuanVelasco-tsx&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=A855F7&icon_color=7E22CE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="stats" />
-<img width="49%" src="https://github-readme-stats-one-phi-25.vercel.app/api/top-langs/?username=JuanVelasco-tsx&layout=compact&langs_count=8&hide_border=true&title_color=A855F7&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="top langs" />
-</div>
-
-<img width="100%" height="6" src="assets/purple-line.gif">
-
-## <img src="https://api.iconify.design/tabler:world.svg?color=%23A855F7" width="22" align="absmiddle"> Contact
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/juan-velasco-15914641a">
-    <img src="https://img.shields.io/badge/LinkedIn-A855F7?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiI%2BPHBhdGggZD0iTTggMTF2NW0wLTh2LjAxTTEyIDE2di01bTQgNXYtM2EyIDIgMCAxIDAtNCAwIi8%2BPHBhdGggZD0iTTMgN2E0IDQgMCAwIDEgNC00aDEwYTQgNCAwIDAgMSA0IDR2MTBhNCA0IDAgMCAxLTQgNEg3YTQgNCAwIDAgMS00LTR6Ii8%2BPC9nPjwvc3ZnPg%3D%3D" />
-  </a>
-  &nbsp;
-  <a href="mailto:velascoduquejuanmanuel@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-9333EA?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="https://instagram.com/juanvelasco.tsx">
-    <img src="https://img.shields.io/badge/Instagram-C084FC?style=for-the-badge&logo=instagram&logoColor=white" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Full_Stack_Developer-Angular_%E2%80%A2_Next.js_%E2%80%A2_Java_%E2%80%A2_Spring_Boot-A855F7?style=flat-square&logoColor=white" />
-</p>
