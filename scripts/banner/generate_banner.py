@@ -18,6 +18,8 @@ from scipy.spatial.distance import cdist
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 CFG = json.loads((HERE / 'banner.config.json').read_text(encoding='utf-8'))
+# paleta y fuente compartidas con las tarjetas de proyectos y los encabezados
+CFG.update(json.loads((HERE.parent / 'shared' / 'theme.json').read_text(encoding='utf-8')))
 
 W, H = 1180, 610
 DUR = float(CFG['loop_seconds'])

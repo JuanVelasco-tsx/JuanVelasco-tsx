@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "scripts/banner/**"
+      - "scripts/shared/**"
       - "assets/banner/**"
       - "!assets/banner/dark.svg"
       - "!assets/banner/light.svg"
