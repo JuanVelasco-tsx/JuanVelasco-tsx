@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="330" viewBox="0 0 1180 330" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" role="img" aria-label="EITO Bot — Bot de Discord para comunidad gaming · 24/7 en Railway">
+<title>EITO Bot</title>
+<defs><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9333EA"/><stop offset="0.333" stop-color="#7E22CE"/><stop offset="0.667" stop-color="#A855F7"/><stop offset="1" stop-color="#C084FC"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="8s" repeatCount="indefinite"/></linearGradient><filter id="gl" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><clipPath id="c"><rect x="2" y="2" width="1176" height="326" rx="14"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="1180" height="330" fill="#FFFFFF"/><rect width="1180" height="38" fill="#FAF5FF"/><line x1="0" y1="38.5" x2="1180" y2="38.5" stroke="#EDE4FA"/></g>
+<circle cx="26" cy="19" r="5.5" fill="#7E22CE"/>
+<circle cx="46" cy="19" r="5.5" fill="#9333EA"/>
+<circle cx="66" cy="19" r="5.5" fill="#C084FC"/>
+<text x="590.0" y="24" text-anchor="middle" font-size="12" fill="#7E22CE">~/proyectos/eito-bot — git log --oneline</text>
+<text x="36" y="76" font-size="10" letter-spacing="3" fill="#9A86B8">PROJECT.INFO</text>
+<text x="36" y="112" font-size="26" font-weight="700" fill="#1E1033">EITO Bot</text>
+<text x="36" y="138" font-size="13" fill="#7E22CE">Bot de Discord para comunidad gaming · 24/7 en Railway</text>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin="0.3s" fill="freeze"/><text x="36" y="180" font-size="15" fill="#1E1033"><tspan fill="#9333EA">▸ </tspan>Moderación, niveles/XP, roles por reacción y canales automáticos</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin="0.55s" fill="freeze"/><text x="36" y="208" font-size="15" fill="#1E1033"><tspan fill="#9333EA">▸ </tspan>Persistencia migrada de JSON a PostgreSQL con SQLAlchemy 2.0 async</text></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin="0.8s" fill="freeze"/><text x="36" y="236" font-size="15" fill="#1E1033"><tspan fill="#9333EA">▸ </tspan>Multi-servidor sin pérdida de datos entre redeploys, con RBAC</text></g>
+<rect x="36" y="268" width="109.8" height="26" rx="6" fill="#FAF5FF" stroke="#C084FC" stroke-opacity=".7"/><text x="90.9" y="285.5" text-anchor="middle" font-size="13" fill="#7E22CE">Python 3.12</text>
+<rect x="155.8" y="268" width="102" height="26" rx="6" fill="#FAF5FF" stroke="#C084FC" stroke-opacity=".7"/><text x="206.8" y="285.5" text-anchor="middle" font-size="13" fill="#7E22CE">discord.py</text>
+<rect x="267.8" y="268" width="102" height="26" rx="6" fill="#FAF5FF" stroke="#C084FC" stroke-opacity=".7"/><text x="318.8" y="285.5" text-anchor="middle" font-size="13" fill="#7E22CE">PostgreSQL</text>
+<rect x="379.8" y="268" width="102" height="26" rx="6" fill="#FAF5FF" stroke="#C084FC" stroke-opacity=".7"/><text x="430.8" y="285.5" text-anchor="middle" font-size="13" fill="#7E22CE">SQLAlchemy</text>
+<rect x="491.8" y="268" width="78.6" height="26" rx="6" fill="#FAF5FF" stroke="#C084FC" stroke-opacity=".7"/><text x="531.1" y="285.5" text-anchor="middle" font-size="13" fill="#7E22CE">Railway</text>
+<text x="584.4" y="287" font-size="16" fill="#9333EA">█<animate attributeName="fill-opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/></text>
+<line x1="834" y1="62" x2="834" y2="302" stroke="#EDE4FA"/>
+<text x="868" y="76" font-size="10" letter-spacing="3" fill="#9A86B8">LANG.MAP</text>
+<circle cx="914" cy="148" r="38" fill="none" stroke="#FAF5FF" stroke-width="14"/>
+<circle cx="914" cy="148" r="38" fill="none" stroke="#7E22CE" stroke-width="14" stroke-dasharray="0 238.8" stroke-dashoffset="0" transform="rotate(-90 914 148)"><animate attributeName="stroke-dasharray" to="238.7 0.1" dur=".6s" begin="0.3s" fill="freeze"/></circle>
+<rect x="972" y="114" width="10" height="10" rx="2" fill="#7E22CE"/><text x="990" y="124" font-size="13" fill="#1E1033">Python <tspan fill="#9A86B8">100%</tspan></text>
+<text x="868" y="238" font-size="13" xml:space="preserve"><tspan fill="#7E22CE">estado</tspan><tspan fill="#D6C6EE"> ...... </tspan><tspan fill="#9333EA">en producción</tspan></text>
+<text x="868" y="262" font-size="13" xml:space="preserve"><tspan fill="#7E22CE">despliegue</tspan><tspan fill="#D6C6EE"> .. </tspan><tspan fill="#1E1033">Railway 24/7</tspan></text>
+<text x="868" y="286" font-size="13" xml:space="preserve"><tspan fill="#7E22CE">último push</tspan><tspan fill="#D6C6EE"> . </tspan><tspan fill="#1E1033">hace 6 días</tspan></text>
+<rect x="2.5" y="2.5" width="1175" height="325" rx="14" fill="none" stroke="url(#bd)" stroke-width="3" opacity=".45" filter="url(#gl)"/>
+<rect x="2.5" y="2.5" width="1175" height="325" rx="14" fill="none" stroke="url(#bd)" stroke-width="1.6"/>
+</svg>
