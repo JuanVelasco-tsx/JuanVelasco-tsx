@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera assets/banner/dark.svg y light.svg: banner "terminal neofetch" animado con SMIL.
+"""Genera assets/banner/{dark,light}.svg y banner-mobile-{dark,light}.svg: banner "terminal neofetch" animado con SMIL.
 
 Todos los datos, rutas, colores y tiempos salen de banner.config.json.
 Uso:  python scripts/banner/generate_banner.py
@@ -7,6 +7,7 @@ Uso:  python scripts/banner/generate_banner.py
 import json
 import math
 import random
+import re
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -21,17 +22,23 @@ CFG = json.loads((HERE / 'banner.config.json').read_text(encoding='utf-8'))
 # paleta y fuente compartidas con las tarjetas de proyectos y los encabezados
 CFG.update(json.loads((HERE.parent / 'shared' / 'theme.json').read_text(encoding='utf-8')))
 
-W, H = 1180, 610
 DUR = float(CFG['loop_seconds'])
 TL = CFG['timeline']
 
 # --- layout (px absolutos del viewBox)
-BOX = (30, 84, 420, 472)            # panel VISUAL.MAP: x, y, w, h
-INFO_X = 486                        # columna del panel SYSTEM.INFO
+BOX = (30, 84, 420, 472)            # panel VISUAL.MAP de escritorio: x, y, w, h
 GCOLS, GROWS = CFG['portrait']['grid']
 PX = min((BOX[2] - 12) / GCOLS, (BOX[3] - 12) / GROWS)
 OX = BOX[0] + (BOX[2] - GCOLS * PX) / 2
 OY = BOX[1] + (BOX[3] - GROWS * PX) / 2
+# el panel del retrato mide lo mismo en las dos versiones: retrato y partículas son idénticos, solo se desplazan.
+# ix: x de SYSTEM.INFO; vcol: columna de los valores; wrap: máx. caracteres por valor (None = sin partir)
+LAYOUTS = {
+    'desktop': dict(W=1180, box=BOX, ix=486, bar=46, title=12, label=10, status=12, name=22, rule=16,
+                    fs=16, step=26, vcol=CFG['terminal']['value_column'], wrap=None),
+    'mobile': dict(W=600, box=((600 - BOX[2]) // 2, 116) + BOX[2:], ix=24, bar=56, title=18, label=18, status=18,
+                   name=26, rule=20, fs=18, step=30, vcol=13, wrap=37),
+}
 
 
 def f(v, n=2):
@@ -196,13 +203,38 @@ def anim_tr(pairs, ease=True):
             f'dur="{f(DUR)}s" repeatCount="indefinite"{extra}/>')
 
 
-def once(begin, dur=0.4, dx=None):
+def once(begin, dur=0.4):
     """Aparición de una sola vez (no se repite en el bucle)."""
-    s = f'<animate attributeName="opacity" from="0" to="1" begin="{f(begin)}s" dur="{f(dur)}s" fill="freeze"/>'
-    if dx is not None:
-        s += (f'<animateTransform attributeName="transform" type="translate" values="{dx} 0;0 0" '
-              f'begin="{f(begin)}s" dur="{f(dur)}s" fill="freeze"/>')
-    return s
+    return f'<animate attributeName="opacity" from="0" to="1" begin="{f(begin)}s" dur="{f(dur)}s" fill="freeze"/>'
+
+
+def info_lines(rows, vcol, width):
+    """[(clave, texto)] de SYSTEM.INFO; con width, los valores largos siguen en otra línea con clave ''."""
+    out = []
+    for k, v in rows:
+        parts = [v]
+        if width:
+            parts, cur = [], ''
+            for w in re.split(r' (?!·)', v):       # un '·' nunca empieza línea
+                if cur and len(cur) + 1 + len(w) > width:
+                    parts.append(cur)
+                    cur = w
+                else:
+                    cur = f'{cur} {w}' if cur else w
+            parts.append(cur)
+        out.append((k, parts[0]))
+        out += [('', x) for x in parts[1:]]
+    return out
+
+
+def shine_defs(x, w, th):
+    """Brillo que cruza un texto (x, ancho w) cada 6 s; en t=0 está fuera del texto, así que no tapa nada."""
+    band, c = 90, th['flash']
+    return (f'<linearGradient id="sh" gradientUnits="userSpaceOnUse" x1="{f(x - band)}" y1="0" x2="{f(x)}" y2="0">'
+            f'<stop offset="0" stop-color="{c}" stop-opacity="0"/><stop offset=".5" stop-color="{c}" stop-opacity=".85"/>'
+            f'<stop offset="1" stop-color="{c}" stop-opacity="0"/><animateTransform attributeName="gradientTransform" '
+            f'type="translate" values="0 0;0 0;{f(w + band)} 0" keyTimes="0;.75;1" dur="6s" repeatCount="indefinite"/>'
+            '</linearGradient>')
 
 
 def luminance(hexc):
@@ -248,9 +280,19 @@ class Scene:
         return path, tones
 
 
-def build(theme_name, scene):
+def build(theme_name, scene, layout):
     th = CFG['themes'][theme_name]
     tm = CFG['terminal']
+    L = LAYOUTS[layout]
+    W, box = L['W'], L['box']
+    ox = box[0] + (box[2] - GCOLS * PX) / 2
+    oy = box[1] + (box[3] - GROWS * PX) / 2
+    lines = info_lines(tm['rows'], L['vcol'], L['wrap'])
+    # SYSTEM.INFO: a la derecha del retrato en escritorio, debajo en móvil
+    iy = box[1] - 12 if layout == 'desktop' else box[1] + box[3] + 18 + L['status'] + 54
+    rows_y = iy + 88
+    fy = box[1] + box[3] - 12 if layout == 'desktop' else rows_y + (len(lines) - 1) * L['step'] + 64
+    H = 610 if layout == 'desktop' else fy + 40
     P = CFG['portrait']
     tones = th['tones']
     col = {1: tones[0], 2: tones[1], 3: tones[2]}
@@ -292,13 +334,14 @@ def build(theme_name, scene):
       f'dur="8s" repeatCount="indefinite"/></linearGradient>')
     a(f'<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{th["bg"]}"/>'
       f'<stop offset="1" stop-color="{th["bg2"]}"/></linearGradient>')
+    a(shine_defs(L['ix'], len(tm['header']) * L['name'] * .6, th))
     a('<filter id="gl" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>')
     a('<filter id="g3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>')
     a(f'<clipPath id="win"><rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="18"/></clipPath>')
-    a(f'<clipPath id="pc"><rect x="{BOX[0]}" y="{BOX[1]}" width="{BOX[2]}" height="{BOX[3]}" rx="10"/></clipPath>')
-    m = f'maskUnits="userSpaceOnUse" x="-50" y="-50" width="{BOX[2] + 100}" height="{BOX[3] + 100}"'
+    a(f'<clipPath id="pc"><rect x="{box[0]}" y="{box[1]}" width="{box[2]}" height="{box[3]}" rx="10"/></clipPath>')
+    m = f'maskUnits="userSpaceOnUse" x="-50" y="-50" width="{box[2] + 100}" height="{box[3] + 100}"'
     a(f'<mask id="m1" {m}><circle cx="{f(CX, 1)}" cy="{f(CY, 1)}" r="0" fill="#fff">{anim("r", radius, " " + rspl)}</circle></mask>')
-    a(f'<mask id="m3" {m}><rect x="-50" y="-50" width="{BOX[2] + 100}" height="{BOX[3] + 100}" fill="#fff"/>'
+    a(f'<mask id="m3" {m}><rect x="-50" y="-50" width="{box[2] + 100}" height="{box[3] + 100}" fill="#fff"/>'
       f'<circle cx="{f(CX, 1)}" cy="{f(CY, 1)}" r="0" fill="#000">{anim("r", radius, " " + rspl)}</circle></mask>')
 
     # partículas: un rect por tono; su tamaño y color se animan una sola vez para las 900 <use>
@@ -324,19 +367,22 @@ def build(theme_name, scene):
     a(f'<rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="18" fill="{th["bg"]}"/>')
     a('<g clip-path="url(#win)">')
     a(f'<rect x="2" y="2" width="{W - 4}" height="{H - 4}" fill="url(#bg)"/>')
-    a(f'<rect x="2" y="2" width="{W - 4}" height="46" fill="{th["titlebar"]}"/>')
-    a(f'<line x1="2" y1="48" x2="{W - 2}" y2="48" stroke="{th["divider"]}"/>')
+    bar = L['bar']
+    a(f'<rect x="2" y="2" width="{W - 4}" height="{bar}" fill="{th["titlebar"]}"/>')
+    a(f'<line x1="2" y1="{bar + 2}" x2="{W - 2}" y2="{bar + 2}" stroke="{th["divider"]}"/>')
+    k = bar / 46                    # escala de la barra respecto a la de escritorio
     for i, c in enumerate(th['window_dots']):
-        a(f'<circle cx="{30 + 20 * i}" cy="25" r="5.5" fill="{c}"/>')
-    a(f'<text x="{W / 2}" y="29" text-anchor="middle" font-size="12" fill="{th["title_text"]}">{escape(tm["title"])}</text>')
+        a(f'<circle cx="{f((30 + 20 * i) * k)}" cy="{f(bar / 2 + 2)}" r="{f(5.5 * k)}" fill="{c}"/>')
+    a(f'<text x="{W / 2}" y="{f(bar / 2 + 2 + L["title"] * .33, 0)}" text-anchor="middle" font-size="{L["title"]}" '
+      f'fill="{th["title_text"]}">{escape(tm["title"])}</text>')
 
     # ---------------- VISUAL.MAP
-    a(f'<text x="{BOX[0] + 2}" y="{BOX[1] - 12}" font-size="10" letter-spacing="3" fill="{th["muted"]}">{escape(tm["portrait_label"])}</text>')
-    a(f'<rect x="{BOX[0]}" y="{BOX[1]}" width="{BOX[2]}" height="{BOX[3]}" rx="10" fill="none" stroke="{th["accent"]}" '
+    a(f'<text x="{box[0] + 2}" y="{box[1] - 12}" font-size="{L["label"]}" letter-spacing="3" fill="{th["muted"]}">{escape(tm["portrait_label"])}</text>')
+    a(f'<rect x="{box[0]}" y="{box[1]}" width="{box[2]}" height="{box[3]}" rx="10" fill="none" stroke="{th["accent"]}" '
       f'stroke-width="2" opacity=".35" filter="url(#g3)"/>')
-    a(f'<rect x="{BOX[0]}" y="{BOX[1]}" width="{BOX[2]}" height="{BOX[3]}" rx="10" fill="{th["panel_bg"]}" stroke="{th["panel_stroke"]}"/>')
+    a(f'<rect x="{box[0]}" y="{box[1]}" width="{box[2]}" height="{box[3]}" rx="10" fill="{th["panel_bg"]}" stroke="{th["panel_stroke"]}"/>')
 
-    a(f'<g clip-path="url(#pc)"><g transform="translate({f(OX)},{f(OY)})">')
+    a(f'<g clip-path="url(#pc)"><g transform="translate({f(ox)},{f(oy)})">')
     shake = [(0, '0 0'), (hit, '0 0'), (hit + .05, '-4 2'), (hit + .1, '4 -3'), (hit + .15, '-3 -1'),
              (hit + .2, '2 3'), (hit + .3, '0 0'), (DUR, '0 0')]
     a(f'<g>{anim_tr(shake, ease=False)}')
@@ -403,56 +449,56 @@ def build(theme_name, scene):
     a('</g></g></g>')
 
     # línea de escaneo (solo en la intro)
-    a(f'<rect x="{BOX[0]}" y="{BOX[1]}" width="{BOX[2]}" height="2" fill="{th["accent"]}" opacity="0" filter="url(#g3)">'
-      f'<animate attributeName="y" from="{f(OY)}" to="{f(OY + GROWS * PX)}" begin="{s0}s" dur="{f(s1 - s0)}s" fill="freeze"/>'
+    a(f'<rect x="{box[0]}" y="{box[1]}" width="{box[2]}" height="2" fill="{th["accent"]}" opacity="0" filter="url(#g3)">'
+      f'<animate attributeName="y" from="{f(oy)}" to="{f(oy + GROWS * PX)}" begin="{s0}s" dur="{f(s1 - s0)}s" fill="freeze"/>'
       f'<set attributeName="opacity" to=".9" begin="{s0}s"/><set attributeName="opacity" to="0" begin="{s1 + .15}s"/></rect>')
 
     # esquinas de visor
-    x0, y0, x1, y1, L = BOX[0] - 5, BOX[1] - 5, BOX[0] + BOX[2] + 5, BOX[1] + BOX[3] + 5, 16
+    x0, y0, x1, y1, arm = box[0] - 5, box[1] - 5, box[0] + box[2] + 5, box[1] + box[3] + 5, 16
     for (x, y, sx_, sy_) in [(x0, y0, 1, 1), (x1, y0, -1, 1), (x0, y1, 1, -1), (x1, y1, -1, -1)]:
-        a(f'<path d="M{x} {y + sy_ * L}V{y}H{x + sx_ * L}" fill="none" stroke="{th["accent"]}" stroke-width="2"/>')
+        a(f'<path d="M{x} {y + sy_ * arm}V{y}H{x + sx_ * arm}" fill="none" stroke="{th["accent"]}" stroke-width="2"/>')
 
     # status bajo el retrato
     sl = tm['status_labels']
-    sy = BOX[1] + BOX[3] + 30
+    sy = box[1] + box[3] + 18 + L['status']
     st = [('stable', th['labels'], [(0, 1), (hit, 1), (hit + .01, 0), (r0, 0), (r0 + .01, 1), (DUR, 1)]),
           ('fractured', th['header'], [(0, 0), (hit, 0), (hit + .01, 1), (d0, 1), (d0 + .01, 0), (DUR, 0)]),
           ('particles', th['accent'], [(0, 0), (d0, 0), (d0 + .01, 1), (r0, 1), (r0 + .01, 0), (DUR, 0)])]
     for key, c, pr in st:
-        a(f'<text x="{BOX[0] + 2}" y="{sy}" font-size="12" fill="{th["muted"]}" opacity="{pr[0][1]}">status: '
+        a(f'<text x="{box[0] + 2}" y="{sy}" font-size="{L["status"]}" fill="{th["muted"]}" opacity="{pr[0][1]}">status: '
           f'<tspan fill="{c}">{escape(sl[key])}</tspan>{anim("opacity", pr)}</text>')
 
-    # ---------------- SYSTEM.INFO
-    a(f'<text x="{INFO_X}" y="{BOX[1] - 12}" font-size="10" letter-spacing="3" fill="{th["muted"]}">{escape(tm["info_label"])}</text>')
+    # ---------------- SYSTEM.INFO (estático: se lee completo sin depender de la animación)
+    ix, fs = L['ix'], L['fs']
+    a(f'<text x="{ix}" y="{iy}" font-size="{L["label"]}" letter-spacing="3" fill="{th["muted"]}">{escape(tm["info_label"])}</text>')
     user, _, host = tm['header'].partition('@')
-    a(f'<g opacity="0">{once(.25, .4)}<text x="{INFO_X}" y="{BOX[1] + 26}" font-size="22" font-weight="700">'
-      f'<tspan fill="{th["labels"]}">{escape(user)}</tspan><tspan fill="{th["muted"]}">@</tspan>'
-      f'<tspan fill="{th["header"]}">{escape(host)}</tspan></text>'
-      f'<text x="{INFO_X}" y="{BOX[1] + 44}" font-size="16" fill="{th["guide_dots"]}">{"─" * len(tm["header"])}</text></g>')
-    col_v = tm['value_column']
-    y = BOX[1] + 76
-    for i, (k, v) in enumerate(tm['rows']):
-        dots = '.' * max(1, col_v - len(k) - 2)
-        a(f'<g opacity="0">{once(.45 + .09 * i, .4, dx=-8)}<text x="{INFO_X}" y="{y}" font-size="16" xml:space="preserve">'
-          f'<tspan fill="{th["labels"]}">{escape(k)}</tspan><tspan fill="{th["guide_dots"]}"> {dots} </tspan>'
-          f'<tspan fill="{th["values"]}">{escape(v)}</tspan></text></g>')
-        y += 26
-    fy = BOX[1] + BOX[3] - 12
-    tend = .45 + .09 * len(tm['rows'])
-    a(f'<line x1="{INFO_X}" y1="{fy - 30}" x2="{W - 40}" y2="{fy - 30}" stroke="{th["divider"]}" opacity="0">'
-      f'<set attributeName="opacity" to="1" begin="{f(tend)}s"/></line>')
-    a(f'<g opacity="0">{once(tend + .1, .5)}<text x="{INFO_X}" y="{fy}" font-size="16" xml:space="preserve">'
+    t = f'x="{ix}" y="{iy + 38}" font-size="{L["name"]}" font-weight="700"'
+    a(f'<text {t}><tspan fill="{th["labels"]}">{escape(user)}</tspan><tspan fill="{th["muted"]}">@</tspan>'
+      f'<tspan fill="{th["header"]}">{escape(host)}</tspan></text><text {t} fill="url(#sh)">{escape(tm["header"])}</text>')
+    a(f'<text x="{ix}" y="{iy + 56}" font-size="{L["rule"]}" fill="{th["guide_dots"]}">{"─" * len(tm["header"])}</text>')
+    col_v = L['vcol']
+    for i, (k, v) in enumerate(lines):
+        y = rows_y + i * L['step']
+        if k:
+            dots = '.' * max(1, col_v - len(k) - 2)
+            a(f'<text x="{ix}" y="{y}" font-size="{fs}" xml:space="preserve">'
+              f'<tspan fill="{th["labels"]}">{escape(k)}</tspan><tspan fill="{th["guide_dots"]}"> {dots} </tspan>'
+              f'<tspan fill="{th["values"]}">{escape(v)}</tspan></text>')
+        else:
+            a(f'<text x="{ix}" y="{y}" font-size="{fs}" xml:space="preserve" fill="{th["values"]}">{" " * col_v}{escape(v)}</text>')
+    a(f'<line x1="{ix}" y1="{fy - 30}" x2="{W - 40 if layout == "desktop" else W - ix}" y2="{fy - 30}" stroke="{th["divider"]}"/>')
+    a(f'<text x="{ix}" y="{fy}" font-size="{fs}" xml:space="preserve">'
       f'<tspan fill="{th["accent"]}">● {escape(tm["live_label"])}<animate attributeName="fill-opacity" '
       f'values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></tspan>'
       f'<tspan fill="{th["values"]}">   {escape(tm["footer_text"])} </tspan>'
       f'<tspan fill="{th["labels"]}">█<animate attributeName="fill-opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" '
       f'dur="1s" repeatCount="indefinite"/></tspan></text>')
     sw = [th['bg2']] + list(dict.fromkeys(tones + th['border']))
+    right = W - 40 if layout == 'desktop' else W - ix
     for i, c in enumerate(sw[:7]):
-        a(f'<rect x="{W - 40 - 22 * (7 - i)}" y="{fy - 14}" width="18" height="18" rx="3" fill="{c}" '
-          f'stroke="{th["panel_stroke"]}"/>')
-    a('</g>')
-
+        # el primero es del color del fondo: borde con más contraste para que se distinga
+        stroke = f'stroke="{th["muted"]}" stroke-width="1.5"' if i == 0 else f'stroke="{th["panel_stroke"]}"'
+        a(f'<rect x="{right - 22 * (7 - i)}" y="{fy - 14}" width="18" height="18" rx="3" fill="{c}" {stroke}/>')
     a('</g>')
     # borde con gradiente animado (rotación entre morados)
     a(f'<rect x="3" y="3" width="{W - 6}" height="{H - 6}" rx="17" fill="none" stroke="url(#bd)" stroke-width="3" '
@@ -464,11 +510,11 @@ def build(theme_name, scene):
 
 def main():
     scene = Scene()
-    for name, rel in CFG['output'].items():
-        svg = build(name, scene)
-        out = ROOT / rel
-        out.write_text(svg, encoding='utf-8', newline='\n')
-        print(f'{rel}: {out.stat().st_size / 1024:.0f} KB')
+    for layout, outputs in (('desktop', CFG['output']), ('mobile', CFG['output_mobile'])):
+        for name, rel in outputs.items():
+            out = ROOT / rel
+            out.write_text(build(name, scene, layout), encoding='utf-8', newline='\n')
+            print(f'{rel}: {out.stat().st_size / 1024:.0f} KB')
 
 
 if __name__ == '__main__':

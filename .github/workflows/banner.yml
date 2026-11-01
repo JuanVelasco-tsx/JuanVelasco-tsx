@@ -9,6 +9,7 @@ on:
       - "assets/banner/**"
       - "!assets/banner/dark.svg"
       - "!assets/banner/light.svg"
+      - "!assets/banner/banner-mobile-*.svg"
   workflow_dispatch:
 
 permissions:
@@ -36,14 +37,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/banner/requirements.txt
 
-      - name: Generate dark.svg / light.svg
+      - name: Generate dark/light SVG (escritorio y móvil)
         run: python scripts/banner/generate_banner.py
 
       - name: Commit banner
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/banner/dark.svg assets/banner/light.svg
+          git add assets/banner/dark.svg assets/banner/light.svg assets/banner/banner-mobile-*.svg
           if git diff --cached --quiet; then
             echo "Banner sin cambios"
           else

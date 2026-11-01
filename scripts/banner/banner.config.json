@@ -16,6 +16,10 @@
     "dark": "assets/banner/dark.svg",
     "light": "assets/banner/light.svg"
   },
+  "output_mobile": {
+    "dark": "assets/banner/banner-mobile-dark.svg",
+    "light": "assets/banner/banner-mobile-light.svg"
+  },
 
   "terminal": {
     "title": "juanvelasco-tsx@github: ~ — neofetch",

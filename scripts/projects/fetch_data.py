@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Completa projects.json con datos en vivo de la API de GitHub (lenguajes y pushed_at).
+"""Completa projects.json con los lenguajes en vivo de la API de GitHub.
 
 Usa GITHUB_TOKEN si existe. Si la API falla para un proyecto, se usan los valores de "fallback" del config.
 """
@@ -20,21 +20,20 @@ def gh(url):
 
 
 def enrich(projects):
-    """Añade p['languages'] (bytes por lenguaje, sumando todos los repos) y p['pushed_at'] (el más reciente)."""
+    """Añade p['languages'] (bytes por lenguaje, sumando todos los repos)."""
     for p in projects:
-        if p.get('private'):  # repo privado: sin API ni "último push", solo los lenguajes del config
-            p['languages'], p['pushed_at'], p['source'] = p['fallback']['languages'], None, 'private'
+        if p.get('private'):  # repo privado: sin API, solo los lenguajes del config
+            p['languages'], p['source'] = p['fallback']['languages'], 'private'
             continue
         try:
-            langs, pushed = {}, []
+            langs = {}
             for repo in p['repos']:
-                pushed.append(gh(f'https://api.github.com/repos/{repo}')['pushed_at'])
                 for k, v in gh(f'https://api.github.com/repos/{repo}/languages').items():
                     langs[k] = langs.get(k, 0) + v
-            p['languages'], p['pushed_at'], p['source'] = langs, max(pushed), 'api'
+            p['languages'], p['source'] = langs, 'api'
         except Exception as e:  # noqa: BLE001 — cualquier fallo de red o de API cae al config
             print(f'warn: {p["slug"]}: {e} — uso fallback del config', file=sys.stderr)
-            p['languages'], p['pushed_at'], p['source'] = p['fallback']['languages'], p['fallback']['pushed_at'], 'fallback'
+            p['languages'], p['source'] = p['fallback']['languages'], 'fallback'
     return projects
 
 
@@ -42,4 +41,4 @@ if __name__ == '__main__':
     from pathlib import Path
     cfg = json.loads((Path(__file__).parent / 'projects.json').read_text(encoding='utf-8'))
     for p in enrich(cfg['projects']):
-        print(p['slug'], p['source'], p['pushed_at'], p['languages'])
+        print(p['slug'], p['source'], p['languages'])

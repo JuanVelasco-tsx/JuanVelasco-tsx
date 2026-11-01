@@ -1,6 +1,8 @@
 <div align="center">
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/banner/banner-mobile-dark.svg" />
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/banner/banner-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner/dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/banner/light.svg" />
   <img alt="Juan Velasco — Backend / Full Stack Developer" src="assets/banner/light.svg" width="100%" />
@@ -30,6 +32,8 @@
 
 <a href="https://github.com/yuseth289/front-neo">
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-mobile-dark.svg" />
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-light.svg" />
   <img alt="NeoGaming — Marketplace de productos gamer" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-light.svg" width="100%" />
@@ -37,9 +41,7 @@
 </a>
 
 <details>
-<summary>Ver detalle</summary>
-
-<p>Desarrollado con metodología <strong>Scrum</strong>.</p>
+<summary><code>$ cat neogaming.md</code></summary>
 
 <p><strong>Backend:</strong> Spring Boot 4 · Spring Security · JWT · PostgreSQL · Flyway · OpenAPI/Swagger<br/><strong>Frontend:</strong> Angular 21 (SSR, NgRx) · Tailwind CSS v4</p>
 
@@ -58,13 +60,15 @@
 </details>
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-mobile-dark.svg" />
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-light.svg" />
   <img alt="L4D2 Versus Addon Manager" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-light.svg" width="100%" />
 </picture>
 
 <details>
-<summary>Ver detalle</summary>
+<summary><code>$ cat versusprep.md</code></summary>
 
 <p>Aplicación de escritorio personal (2026 – actualidad, versión <strong>1.0.0-beta</strong> publicada para la comunidad). Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus, eliminando el proceso manual de extraer y reconstruir VPKs. Interfaz rediseñada para usuarios sin experiencia técnica y firmada digitalmente con signtool (SHA-256 + sellado de tiempo).</p>
 
@@ -73,13 +77,15 @@
 </details>
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-mobile-dark.svg" />
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-light.svg" />
   <img alt="EITO Bot — Bot de Discord para comunidad gaming" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-light.svg" width="100%" />
 </picture>
 
 <details>
-<summary>Ver detalle</summary>
+<summary><code>$ cat eito-bot.md</code></summary>
 
 <p>Bot personal en Python 3.12 + discord.py, desplegado 24/7 en Railway. Moderación (ban, kick, mute, advertencias), sistema de niveles/XP, roles por reacción y creación automática de canales, categorías y roles. Migré la persistencia de JSON a PostgreSQL con SQLAlchemy 2.0 async + asyncpg (multi-servidor, sin pérdida de datos entre redeploys) e implementé RBAC para canales restringidos.</p>
 

@@ -20,9 +20,8 @@
       "chips": ["Angular 21", "Spring Boot 4", "PostgreSQL", "Tailwind", "JWT"],
       "link": "https://github.com/yuseth289/front-neo",
       "repos": ["yuseth289/front-neo", "yuseth289/Backend-Neogamin-"],
-      "rows": [["estado", "finalizado"], ["periodo", "oct 2025 – jul 2026"]],
+      "rows": [["estado", "finalizado"], ["periodo", "oct 2025 – jul 2026"], ["equipo", "4 devs · Scrum"]],
       "fallback": {
-        "pushed_at": "2026-07-01T04:42:13Z",
         "languages": { "TypeScript": 1107793, "Java": 718038, "Python": 98270, "HTML": 56997, "CSS": 20024, "Shell": 9480, "Dockerfile": 2012 }
       }
     },
