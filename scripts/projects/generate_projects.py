@@ -117,7 +117,7 @@ def card(p, th, now):
         a(f'<rect x="{X0 + 104}" y="{ly - 10}" width="10" height="10" rx="2" fill="{c}"/>'
           f'<text x="{X0 + 122}" y="{ly}" font-size="13" fill="{th["values"]}">{escape(n)} '
           f'<tspan fill="{th["muted"]}">{fr * 100:.0f}%</tspan></text>')
-    rows = p['rows'] + [['último push', relative(p['pushed_at'], now)]]
+    rows = p['rows'] + ([['último push', relative(p['pushed_at'], now)]] if p['pushed_at'] else [])
     for i, (k, v) in enumerate(rows):
         dots = '.' * max(1, 12 - len(k))
         vc = th['accent'] if k == 'estado' else th['values']

@@ -22,6 +22,9 @@ def gh(url):
 def enrich(projects):
     """Añade p['languages'] (bytes por lenguaje, sumando todos los repos) y p['pushed_at'] (el más reciente)."""
     for p in projects:
+        if p.get('private'):  # repo privado: sin API ni "último push", solo los lenguajes del config
+            p['languages'], p['pushed_at'], p['source'] = p['fallback']['languages'], None, 'private'
+            continue
         try:
             langs, pushed = {}, []
             for repo in p['repos']:

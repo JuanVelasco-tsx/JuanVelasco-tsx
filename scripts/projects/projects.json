@@ -37,11 +37,9 @@
         "Ejecutable firmado con signtool (SHA-256 + sellado de tiempo)"
       ],
       "chips": ["Electron", "Node.js", "TypeScript"],
-      "link": "https://github.com/JuanVelasco-tsx/VersusPrep",
-      "repos": ["JuanVelasco-tsx/VersusPrep"],
-      "rows": [["estado", "beta"], ["versión", "1.0.0-beta"]],
+      "private": true,
+      "rows": [["estado", "beta"], ["versión", "1.0.0-beta"], ["plataforma", "Windows"]],
       "fallback": {
-        "pushed_at": "2026-09-15T23:02:51Z",
         "languages": { "TypeScript": 726982 }
       }
     },
@@ -56,11 +54,9 @@
         "Multi-servidor sin pérdida de datos entre redeploys, con RBAC"
       ],
       "chips": ["Python 3.12", "discord.py", "PostgreSQL", "SQLAlchemy", "Railway"],
-      "link": "https://github.com/JuanVelasco-tsx/Eito-bot-dc",
-      "repos": ["JuanVelasco-tsx/Eito-bot-dc"],
+      "private": true,
       "rows": [["estado", "en producción"], ["despliegue", "Railway 24/7"]],
       "fallback": {
-        "pushed_at": "2026-09-20T00:13:29Z",
         "languages": { "Python": 73386, "Procfile": 33 }
       }
     }
