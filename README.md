@@ -22,6 +22,12 @@
   </a>
 </p>
 
+<p>
+  Desarrollador Full Stack junior · Java/Spring Boot, Angular, Node.js/Express, Next.js y PostgreSQL.<br/>
+  Actualmente en etapa productiva (SENA) desarrollando la plataforma web de un negocio local.<br/>
+  Disponible para trabajo remoto · Colombia (GMT-5).
+</p>
+
 </div>
 
 <picture>
