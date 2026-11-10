@@ -62,17 +62,19 @@
   <source media="(max-width: 1012px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-light.svg" />
-  <img alt="EITOX — Gestor de addons para L4D2" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-light.svg" width="100%" />
+  <img alt="EITOX — gestor de addons para L4D2 (equipo EITO)" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-light.svg" width="100%" />
 </picture>
 
 <details>
 <summary><code>$ cat eitox.md</code></summary>
 
-<p>Aplicación de escritorio personal (2026 – actualidad, versión <strong>1.0.0-beta</strong> publicada para la comunidad). Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus, eliminando el proceso manual de extraer y reconstruir VPKs. Interfaz rediseñada para usuarios sin experiencia técnica y firmada digitalmente con signtool (SHA-256 + sellado de tiempo).</p>
+<p><strong>El proyecto (equipo EITO):</strong> aplicación de escritorio en C# con .NET 10 y WPF que automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus.</p>
+
+<p><strong>Mi parte:</strong> coordinación del repositorio (flujo de ramas y PRs, integración de los PRs, triaje de issues), CI con GitHub Actions y hooks de git, correcciones de robustez en backup e instalación con sus tests en xUnit, auditorías del código, kit de pruebas manuales y documentación del flujo de trabajo con agentes de IA.</p>
+
+<p><em>Proyecto en equipo · repositorio privado de la organización</em></p>
 
 <!-- captura/GIF aquí -->
-
-<p><em>Repositorio privado · código disponible bajo solicitud</em></p>
 
 </details>
 
