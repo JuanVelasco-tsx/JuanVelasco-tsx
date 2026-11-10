@@ -68,6 +68,8 @@
 
 <p>Aplicación de escritorio personal (2026 – actualidad, versión <strong>1.0.0-beta</strong> publicada para la comunidad). Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus, eliminando el proceso manual de extraer y reconstruir VPKs. Interfaz rediseñada para usuarios sin experiencia técnica y firmada digitalmente con signtool (SHA-256 + sellado de tiempo).</p>
 
+<!-- captura/GIF aquí -->
+
 <p><em>Repositorio privado · código disponible bajo solicitud</em></p>
 
 </details>
@@ -84,6 +86,8 @@
 <summary><code>$ cat eito-bot.md</code></summary>
 
 <p>Bot personal en Python 3.12 + discord.py, desplegado 24/7 en Railway. Moderación (ban, kick, mute, advertencias), sistema de niveles/XP, roles por reacción y creación automática de canales, categorías y roles. Migré la persistencia de JSON a PostgreSQL con SQLAlchemy 2.0 async + asyncpg (multi-servidor, sin pérdida de datos entre redeploys) e implementé RBAC para canales restringidos.</p>
+
+<!-- captura/GIF aquí -->
 
 <p><em>Repositorio privado · código disponible bajo solicitud</em></p>
 
