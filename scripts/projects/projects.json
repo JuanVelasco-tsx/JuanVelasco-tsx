@@ -49,7 +49,8 @@
         "Multi-servidor sin pérdida de datos entre redeploys, con RBAC"
       ],
       "chips": ["Python 3.12", "discord.py", "PostgreSQL", "SQLAlchemy", "Railway"],
-      "private": true,
+      "link": "https://github.com/JuanVelasco-tsx/Eito-bot-dc",
+      "repos": ["JuanVelasco-tsx/Eito-bot-dc"],
       "rows": [["estado", "en producción"], ["despliegue", "Railway 24/7"]],
       "fallback": {
         "languages": { "Python": 73386, "Procfile": 33 }
