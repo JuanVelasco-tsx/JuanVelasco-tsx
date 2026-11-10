@@ -25,18 +25,16 @@
       "slug": "eitox",
       "name": "EITOX",
       "path": "~/proyectos/eitox",
-      "subtitle": "Gestor de addons para L4D2 · app de escritorio · Windows",
+      "subtitle": "Gestor de addons para L4D2 · app Windows · equipo EITO",
       "bullets": [
-        "Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus",
-        "Interfaz rediseñada para usuarios sin experiencia técnica",
-        "Ejecutable firmado con signtool (SHA-256 + sellado de tiempo)"
+        "Corregí fallos de robustez: rollback, JSON dañados y nombres seguros",
+        "Monté CI en GitHub Actions, hooks de git y flujo de ramas con PRs",
+        "Coordiné 22 PRs, triaje de 20 issues y auditorías del código"
       ],
-      "chips": ["Electron", "Node.js", "TypeScript"],
+      "chips": ["C#", ".NET 10", "xUnit", "GitHub Actions", "PowerShell"],
       "private": true,
-      "rows": [["estado", "beta"], ["versión", "1.0.0-beta"], ["plataforma", "Windows"]],
-      "fallback": {
-        "languages": { "TypeScript": 726982 }
-      }
+      "show_languages": false,
+      "rows": [["estado", "en desarrollo"], ["versión", "0.6.0 (sin publicar)"], ["rol", "coordinación · QA · CI"]]
     },
     {
       "slug": "eito-bot",
