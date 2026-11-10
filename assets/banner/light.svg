@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" role="img" aria-label="juan@velasco — juanvelasco-tsx@github: ~ — neofetch">
-<title>juan@velasco · Backend / Full Stack Developer</title>
+<title>juan@velasco · Full Stack Developer · junior</title>
 <defs>
 <linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9333EA"/><stop offset="0.33" stop-color="#7E22CE"/><stop offset="0.67" stop-color="#A855F7"/><stop offset="1" stop-color="#C084FC"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="8s" repeatCount="indefinite"/></linearGradient>
 <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
@@ -1116,7 +1116,7 @@
 <text x="486" y="110" font-size="22" font-weight="700"><tspan fill="#7E22CE">juan</tspan><tspan fill="#9A86B8">@</tspan><tspan fill="#7E22CE">velasco</tspan></text><text x="486" y="110" font-size="22" font-weight="700" fill="url(#sh)">juan@velasco</text>
 <text x="486" y="128" font-size="16" fill="#D6C6EE">────────────</text>
 <text x="486" y="160" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Nombre</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Juan Velasco</tspan></text>
-<text x="486" y="186" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Rol</tspan><tspan fill="#D6C6EE"> .......... </tspan><tspan fill="#1E1033">Backend / Full Stack Developer</tspan></text>
+<text x="486" y="186" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Rol</tspan><tspan fill="#D6C6EE"> .......... </tspan><tspan fill="#1E1033">Full Stack Developer · junior</tspan></text>
 <text x="486" y="212" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Origen</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Armenia, Quindío · CO</tspan></text>
 <text x="486" y="238" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Formación</tspan><tspan fill="#D6C6EE"> .... </tspan><tspan fill="#1E1033">Tecnólogo ADSO · SENA</tspan></text>
 <text x="486" y="264" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Estado</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Practicante dev · abierto a remoto</tspan></text>
@@ -1124,7 +1124,7 @@
 <text x="486" y="316" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Backend</tspan><tspan fill="#D6C6EE"> ...... </tspan><tspan fill="#1E1033">Spring Boot · Node.js/Express · JWT · REST</tspan></text>
 <text x="486" y="342" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Frontend</tspan><tspan fill="#D6C6EE"> ..... </tspan><tspan fill="#1E1033">Angular · React · Next.js · Tailwind</tspan></text>
 <text x="486" y="368" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Datos</tspan><tspan fill="#D6C6EE"> ........ </tspan><tspan fill="#1E1033">PostgreSQL · MySQL · Prisma</tspan></text>
-<text x="486" y="394" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Escritorio</tspan><tspan fill="#D6C6EE"> ... </tspan><tspan fill="#1E1033">Electron · Node.js</tspan></text>
+<text x="486" y="394" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Escritorio</tspan><tspan fill="#D6C6EE"> ... </tspan><tspan fill="#1E1033">Electron · Node.js · C#/.NET</tspan></text>
 <text x="486" y="420" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">DevOps</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Git · GitHub Actions · Docker · Railway</tspan></text>
 <text x="486" y="446" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">IA</tspan><tspan fill="#D6C6EE"> ........... </tspan><tspan fill="#1E1033">Claude Code · Kiro</tspan></text>
 <text x="486" y="472" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Email</tspan><tspan fill="#D6C6EE"> ........ </tspan><tspan fill="#1E1033">velascoduquejuanmanuel@gmail.com</tspan></text>

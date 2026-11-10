@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="1320" viewBox="0 0 600 1320" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" role="img" aria-label="juan@velasco — juanvelasco-tsx@github: ~ — neofetch">
-<title>juan@velasco · Backend / Full Stack Developer</title>
+<title>juan@velasco · Full Stack Developer · junior</title>
 <defs>
 <linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A855F7"/><stop offset="0.33" stop-color="#9333EA"/><stop offset="0.67" stop-color="#7E22CE"/><stop offset="1" stop-color="#C084FC"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="8s" repeatCount="indefinite"/></linearGradient>
 <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D0818"/><stop offset="1" stop-color="#120A22"/></linearGradient>
@@ -1116,7 +1116,7 @@
 <text x="24" y="716" font-size="26" font-weight="700"><tspan fill="#C084FC">juan</tspan><tspan fill="#6B4F8F">@</tspan><tspan fill="#E9D5FF">velasco</tspan></text><text x="24" y="716" font-size="26" font-weight="700" fill="url(#sh)">juan@velasco</text>
 <text x="24" y="734" font-size="20" fill="#4A3566">────────────</text>
 <text x="24" y="766" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Nombre</tspan><tspan fill="#4A3566"> ..... </tspan><tspan fill="#F5F3FF">Juan Velasco</tspan></text>
-<text x="24" y="796" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Rol</tspan><tspan fill="#4A3566"> ........ </tspan><tspan fill="#F5F3FF">Backend / Full Stack Developer</tspan></text>
+<text x="24" y="796" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Rol</tspan><tspan fill="#4A3566"> ........ </tspan><tspan fill="#F5F3FF">Full Stack Developer · junior</tspan></text>
 <text x="24" y="826" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Origen</tspan><tspan fill="#4A3566"> ..... </tspan><tspan fill="#F5F3FF">Armenia, Quindío · CO</tspan></text>
 <text x="24" y="856" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Formación</tspan><tspan fill="#4A3566"> .. </tspan><tspan fill="#F5F3FF">Tecnólogo ADSO · SENA</tspan></text>
 <text x="24" y="886" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Estado</tspan><tspan fill="#4A3566"> ..... </tspan><tspan fill="#F5F3FF">Practicante dev · abierto a remoto</tspan></text>
@@ -1125,7 +1125,7 @@
 <text x="24" y="976" font-size="18" xml:space="preserve" fill="#F5F3FF">             REST</text>
 <text x="24" y="1006" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Frontend</tspan><tspan fill="#4A3566"> ... </tspan><tspan fill="#F5F3FF">Angular · React · Next.js · Tailwind</tspan></text>
 <text x="24" y="1036" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Datos</tspan><tspan fill="#4A3566"> ...... </tspan><tspan fill="#F5F3FF">PostgreSQL · MySQL · Prisma</tspan></text>
-<text x="24" y="1066" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Escritorio</tspan><tspan fill="#4A3566"> . </tspan><tspan fill="#F5F3FF">Electron · Node.js</tspan></text>
+<text x="24" y="1066" font-size="18" xml:space="preserve"><tspan fill="#C084FC">Escritorio</tspan><tspan fill="#4A3566"> . </tspan><tspan fill="#F5F3FF">Electron · Node.js · C#/.NET</tspan></text>
 <text x="24" y="1096" font-size="18" xml:space="preserve"><tspan fill="#C084FC">DevOps</tspan><tspan fill="#4A3566"> ..... </tspan><tspan fill="#F5F3FF">Git · GitHub Actions · Docker ·</tspan></text>
 <text x="24" y="1126" font-size="18" xml:space="preserve" fill="#F5F3FF">             Railway</text>
 <text x="24" y="1156" font-size="18" xml:space="preserve"><tspan fill="#C084FC">IA</tspan><tspan fill="#4A3566"> ......... </tspan><tspan fill="#F5F3FF">Claude Code · Kiro</tspan></text>
