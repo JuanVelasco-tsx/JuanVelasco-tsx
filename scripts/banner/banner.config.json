@@ -29,7 +29,7 @@
     "value_column": 15,
     "rows": [
       ["Nombre", "Juan Velasco"],
-      ["Rol", "Backend / Full Stack Developer"],
+      ["Rol", "Full Stack Developer · junior"],
       ["Origen", "Armenia, Quindío · CO"],
       ["Formación", "Tecnólogo ADSO · SENA"],
       ["Estado", "Practicante dev · abierto a remoto"],
@@ -37,7 +37,7 @@
       ["Backend", "Spring Boot · Node.js/Express · JWT · REST"],
       ["Frontend", "Angular · React · Next.js · Tailwind"],
       ["Datos", "PostgreSQL · MySQL · Prisma"],
-      ["Escritorio", "Electron · Node.js"],
+      ["Escritorio", "Electron · Node.js · C#/.NET"],
       ["DevOps", "Git · GitHub Actions · Docker · Railway"],
       ["IA", "Claude Code · Kiro"],
       ["Email", "velascoduquejuanmanuel@gmail.com"],
