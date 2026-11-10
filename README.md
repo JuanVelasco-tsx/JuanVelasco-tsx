@@ -5,7 +5,7 @@
   <source media="(max-width: 1012px) and (prefers-color-scheme: light)" srcset="assets/banner/banner-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner/dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/banner/light.svg" />
-  <img alt="Juan Velasco — Backend / Full Stack Developer" src="assets/banner/light.svg" width="100%" />
+  <img alt="Juan Velasco — Full Stack Developer · junior" src="assets/banner/light.svg" width="100%" />
 </picture>
 
 <p>
