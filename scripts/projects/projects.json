@@ -44,11 +44,11 @@
       "path": "~/proyectos/eito-bot",
       "subtitle": "Bot de Discord para comunidad gaming · 24/7 en Railway",
       "bullets": [
-        "Moderación, niveles/XP, roles por reacción y canales automáticos",
-        "Persistencia migrada de JSON a PostgreSQL con SQLAlchemy 2.0 async",
-        "Multi-servidor sin pérdida de datos entre redeploys, con RBAC"
+        "Moderación, niveles/XP, tickets con transcripción y anti-multicuentas",
+        "PostgreSQL con SQLAlchemy 2.0 async · multi-servidor y sin pérdida de datos",
+        "+480 tests con pytest ejecutados en CI con GitHub Actions"
       ],
-      "chips": ["Python 3.12", "discord.py", "PostgreSQL", "SQLAlchemy", "Railway"],
+      "chips": ["Python 3.12", "discord.py", "PostgreSQL", "pytest", "GitHub Actions"],
       "link": "https://github.com/JuanVelasco-tsx/Eito-bot-dc",
       "repos": ["JuanVelasco-tsx/Eito-bot-dc"],
       "rows": [["estado", "en producción"], ["despliegue", "Railway 24/7"]],
