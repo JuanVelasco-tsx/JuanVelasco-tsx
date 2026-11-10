@@ -1119,11 +1119,11 @@
 <text x="486" y="186" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Rol</tspan><tspan fill="#D6C6EE"> .......... </tspan><tspan fill="#1E1033">Backend / Full Stack Developer</tspan></text>
 <text x="486" y="212" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Origen</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Armenia, Quindío · CO</tspan></text>
 <text x="486" y="238" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Formación</tspan><tspan fill="#D6C6EE"> .... </tspan><tspan fill="#1E1033">Tecnólogo ADSO · SENA</tspan></text>
-<text x="486" y="264" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Estado</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Buscando etapa práctica</tspan></text>
+<text x="486" y="264" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Estado</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Practicante dev · abierto a remoto</tspan></text>
 <text x="486" y="290" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Lenguajes</tspan><tspan fill="#D6C6EE"> .... </tspan><tspan fill="#1E1033">Java · TypeScript · Python · SQL</tspan></text>
-<text x="486" y="316" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Backend</tspan><tspan fill="#D6C6EE"> ...... </tspan><tspan fill="#1E1033">Spring Boot · Spring Security · JWT · REST</tspan></text>
+<text x="486" y="316" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Backend</tspan><tspan fill="#D6C6EE"> ...... </tspan><tspan fill="#1E1033">Spring Boot · Node.js/Express · JWT · REST</tspan></text>
 <text x="486" y="342" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Frontend</tspan><tspan fill="#D6C6EE"> ..... </tspan><tspan fill="#1E1033">Angular · React · Next.js · Tailwind</tspan></text>
-<text x="486" y="368" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Datos</tspan><tspan fill="#D6C6EE"> ........ </tspan><tspan fill="#1E1033">PostgreSQL · MySQL · Flyway</tspan></text>
+<text x="486" y="368" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Datos</tspan><tspan fill="#D6C6EE"> ........ </tspan><tspan fill="#1E1033">PostgreSQL · MySQL · Prisma</tspan></text>
 <text x="486" y="394" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">Escritorio</tspan><tspan fill="#D6C6EE"> ... </tspan><tspan fill="#1E1033">Electron · Node.js</tspan></text>
 <text x="486" y="420" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">DevOps</tspan><tspan fill="#D6C6EE"> ....... </tspan><tspan fill="#1E1033">Git · Docker · Railway · Linux</tspan></text>
 <text x="486" y="446" font-size="16" xml:space="preserve"><tspan fill="#7E22CE">IA</tspan><tspan fill="#D6C6EE"> ........... </tspan><tspan fill="#1E1033">Claude Code · Kiro</tspan></text>
