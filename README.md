@@ -36,7 +36,6 @@
   <img alt="Proyectos" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/header-proyectos-light.svg" width="100%" height="48" />
 </picture>
 
-<a href="https://github.com/yuseth289/front-neo">
 <picture>
   <source media="(max-width: 1012px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-mobile-dark.svg" />
   <source media="(max-width: 1012px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-mobile-light.svg" />
@@ -44,24 +43,15 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-light.svg" />
   <img alt="NeoGaming — Marketplace de productos gamer" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-neogaming-light.svg" width="100%" />
 </picture>
-</a>
 
 <details>
 <summary><code>$ cat neogaming.md</code></summary>
 
-<p><strong>Backend:</strong> Spring Boot 4 · Spring Security · JWT · PostgreSQL · Flyway · OpenAPI/Swagger<br/><strong>Frontend:</strong> Angular 21 (SSR, NgRx) · Tailwind CSS v4</p>
+<p><strong>Mi parte:</strong> frontend con Angular 21 (SSR, NgRx) y Tailwind CSS v4, consumiendo la API REST del equipo.</p>
 
 <p><strong>QA:</strong> Mercado Pago, stock/inventario, panel de administración, catálogo y asistente IA de publicación.</p>
 
-<p>
-  <a href="https://github.com/yuseth289/front-neo">
-    <img alt="Frontend" src="https://img.shields.io/badge/Frontend-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=github&logoColor=C084FC" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/yuseth289/Backend-Neogamin-">
-    <img alt="Backend" src="https://img.shields.io/badge/Backend-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=github&logoColor=C084FC" />
-  </a>
-</p>
+<p><em>Proyecto en equipo · código en repositorios del equipo, no público</em></p>
 
 </details>
 
