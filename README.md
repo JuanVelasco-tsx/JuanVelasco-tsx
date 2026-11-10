@@ -47,9 +47,11 @@
 <details>
 <summary><code>$ cat neogaming.md</code></summary>
 
+<p><strong>La plataforma (equipo):</strong> marketplace gaming con arquitectura de monolito modular, checkout multi-vendedor con split de pagos en Mercado Pago y un agente de búsqueda con IA.</p>
+
 <p><strong>Mi parte:</strong> frontend con Angular 21 (SSR, NgRx) y Tailwind CSS v4, consumiendo la API REST del equipo.</p>
 
-<p><strong>QA:</strong> Mercado Pago, stock/inventario, panel de administración, catálogo y asistente IA de publicación.</p>
+<p><strong>QA:</strong> Mercado Pago, stock/inventario, panel de administración, catálogo y agente de búsqueda con IA.</p>
 
 <p><em>Proyecto en equipo · código en repositorios del equipo, no público</em></p>
 
