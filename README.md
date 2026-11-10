@@ -74,6 +74,7 @@
 
 </details>
 
+<a href="https://github.com/JuanVelasco-tsx/Eito-bot-dc">
 <picture>
   <source media="(max-width: 1012px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-mobile-dark.svg" />
   <source media="(max-width: 1012px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-mobile-light.svg" />
@@ -81,6 +82,7 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-light.svg" />
   <img alt="EITO Bot — Bot de Discord para comunidad gaming" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eito-bot-light.svg" width="100%" />
 </picture>
+</a>
 
 <details>
 <summary><code>$ cat eito-bot.md</code></summary>
@@ -89,7 +91,11 @@
 
 <!-- captura/GIF aquí -->
 
-<p><em>Repositorio privado · código disponible bajo solicitud</em></p>
+<p>
+  <a href="https://github.com/JuanVelasco-tsx/Eito-bot-dc">
+    <img alt="Repositorio" src="https://img.shields.io/badge/Repositorio-2A1A45?style=for-the-badge&labelColor=2A1A45&logo=github&logoColor=C084FC" />
+  </a>
+</p>
 
 </details>
 
