@@ -56,15 +56,15 @@
 </details>
 
 <picture>
-  <source media="(max-width: 1012px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-mobile-dark.svg" />
-  <source media="(max-width: 1012px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-mobile-light.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-light.svg" />
-  <img alt="L4D2 Versus Addon Manager" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-versusprep-light.svg" width="100%" />
+  <source media="(max-width: 1012px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-mobile-dark.svg" />
+  <source media="(max-width: 1012px) and (prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-mobile-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-light.svg" />
+  <img alt="EITOX — Gestor de addons para L4D2" src="https://raw.githubusercontent.com/JuanVelasco-tsx/JuanVelasco-tsx/projects/card-eitox-light.svg" width="100%" />
 </picture>
 
 <details>
-<summary><code>$ cat versusprep.md</code></summary>
+<summary><code>$ cat eitox.md</code></summary>
 
 <p>Aplicación de escritorio personal (2026 – actualidad, versión <strong>1.0.0-beta</strong> publicada para la comunidad). Automatiza la gestión de addons de Steam Workshop para L4D2 en modo Versus, eliminando el proceso manual de extraer y reconstruir VPKs. Interfaz rediseñada para usuarios sin experiencia técnica y firmada digitalmente con signtool (SHA-256 + sellado de tiempo).</p>
 
