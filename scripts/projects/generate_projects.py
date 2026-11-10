@@ -168,12 +168,17 @@ def card(p, th):
     x, _ = chips(a, p['chips'], 36, 268, 13, 26, W, th)
     a(cursor(x + 4, 287, 16, th))
 
-    # LANG.MAP
+    # LANG.MAP (o solo las filas, centradas bajo la etiqueta, si el proyecto no muestra lenguajes)
     X0 = 868
     a(f'<line x1="{X0 - 34}" y1="62" x2="{X0 - 34}" y2="{H - 28}" stroke="{th["divider"]}"/>')
-    a(label(X0, 76, 'LANG.MAP', 10, th))
-    donut(a, lang_split(p['languages']), X0 + 46, 148, 38, 14, X0 + 104, 124, 22, 13, th)
-    kv_rows(a, p['rows'], X0, 238, 24, 13, th)
+    if p.get('show_languages', True):
+        a(label(X0, 76, 'LANG.MAP', 10, th))
+        donut(a, lang_split(p['languages']), X0 + 46, 148, 38, 14, X0 + 104, 124, 22, 13, th)
+        kv_rows(a, p['rows'], X0, 238, 24, 13, th)
+    else:
+        a(label(X0, 76, 'PROJECT.META', 10, th))
+        mid = (76 + H - 28) / 2
+        kv_rows(a, p['rows'], X0, round(mid - (len(p['rows']) - 1) * 24 / 2 + 13 * .36), 24, 13, th)
     return frame(W, H, p, th, 38, 12, o, shine_defs(36, len(p['name']) * 26 * .6, th))
 
 
@@ -203,12 +208,16 @@ def card_mobile(p, th):
     y = cy + 34 + 30
     a(f'<line x1="{PAD}" y1="{y}" x2="{W - PAD}" y2="{y}" stroke="{th["divider"]}"/>')
     y += 44
-    a(label(PAD, y, 'LANG.MAP', FS, th))
-    split = lang_split(p['languages'])
-    r, sw, step = 52, 18, 32
-    cx, dcy = PAD + r + sw / 2, y + 30 + r + sw / 2
-    donut(a, split, cx, dcy, r, sw, cx + r + sw / 2 + 30, dcy - (len(split) - 1) * step / 2 + FS * .36, step, FS, th)
-    y = dcy + r + sw / 2 + 50
+    if p.get('show_languages', True):
+        a(label(PAD, y, 'LANG.MAP', FS, th))
+        split = lang_split(p['languages'])
+        r, sw, step = 52, 18, 32
+        cx, dcy = PAD + r + sw / 2, y + 30 + r + sw / 2
+        donut(a, split, cx, dcy, r, sw, cx + r + sw / 2 + 30, dcy - (len(split) - 1) * step / 2 + FS * .36, step, FS, th)
+        y = dcy + r + sw / 2 + 50
+    else:
+        a(label(PAD, y, 'PROJECT.META', FS, th))
+        y += 44
     kv_rows(a, p['rows'], PAD, y, 32, FS, th)
     H = int(y + (len(p['rows']) - 1) * 32 + 34)
     return frame(W, H, p, th, 52, FS, o, shine_defs(PAD, len(p['name']) * 30 * .6, th))

@@ -13,17 +13,13 @@
       "path": "~/proyectos/neogaming",
       "subtitle": "Marketplace gamer · proyecto formativo SENA · equipo de 4",
       "bullets": [
-        "13 módulos funcionales y 27 controladores REST, desplegado en Railway",
-        "Fundé el repo base, la estructura inicial y la documentación técnica",
-        "Líder de QA: más de 40 incidencias documentadas y priorizadas"
+        "Desarrollé el frontend: Angular 21 con SSR, NgRx y Tailwind CSS v4",
+        "Líder de QA: más de 40 incidencias documentadas y priorizadas",
+        "Plataforma de 13 módulos integrada con la API REST del equipo"
       ],
-      "chips": ["Angular 21", "Spring Boot 4", "PostgreSQL", "Tailwind", "JWT"],
-      "link": "https://github.com/yuseth289/front-neo",
-      "repos": ["yuseth289/front-neo", "yuseth289/Backend-Neogamin-"],
-      "rows": [["estado", "finalizado"], ["periodo", "oct 2025 – jul 2026"], ["equipo", "4 devs · Scrum"]],
-      "fallback": {
-        "languages": { "TypeScript": 1107793, "Java": 718038, "Python": 98270, "HTML": 56997, "CSS": 20024, "Shell": 9480, "Dockerfile": 2012 }
-      }
+      "chips": ["Angular 21", "TypeScript", "NgRx", "Tailwind CSS", "QA"],
+      "show_languages": false,
+      "rows": [["estado", "finalizado"], ["periodo", "oct 2025 – jun 2026"], ["equipo", "4 devs · Scrum"]]
     },
     {
       "slug": "versusprep",
