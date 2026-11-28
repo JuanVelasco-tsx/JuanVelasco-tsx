@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="330" viewBox="0 0 1180 330" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" role="img" aria-label="EITOX — Gestor de addons para L4D2 · app Windows · equipo EITO">
+<title>EITOX</title>
+<defs><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A855F7"/><stop offset="0.333" stop-color="#9333EA"/><stop offset="0.667" stop-color="#7E22CE"/><stop offset="1" stop-color="#C084FC"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="8s" repeatCount="indefinite"/></linearGradient><filter id="gl" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><linearGradient id="sh" gradientUnits="userSpaceOnUse" x1="-54" y1="0" x2="36" y2="0"><stop offset="0" stop-color="#E9D5FF" stop-opacity="0"/><stop offset=".5" stop-color="#E9D5FF" stop-opacity=".85"/><stop offset="1" stop-color="#E9D5FF" stop-opacity="0"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0;0 0;168 0" keyTimes="0;.75;1" dur="6s" repeatCount="indefinite"/></linearGradient><clipPath id="c"><rect x="2" y="2" width="1176" height="326" rx="14"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="1180" height="330" fill="#0D0818"/><rect width="1180" height="38" fill="#120A22"/><line x1="0" y1="38.5" x2="1180" y2="38.5" stroke="#2A1A45"/></g>
+<circle cx="26" cy="19" r="5.5" fill="#7E22CE"/>
+<circle cx="46" cy="19" r="5.5" fill="#A855F7"/>
+<circle cx="66" cy="19" r="5.5" fill="#E9D5FF"/>
+<text x="590" y="24" text-anchor="middle" font-size="12" fill="#C084FC">~/proyectos/eitox — git log --oneline</text>
+<text x="36" y="76" font-size="10" letter-spacing="3" fill="#6B4F8F">PROJECT.INFO</text>
+<text x="36" y="112" font-size="26" font-weight="700" fill="#F5F3FF">EITOX</text><text x="36" y="112" font-size="26" font-weight="700" fill="url(#sh)">EITOX</text>
+<text x="36" y="138" font-size="13" fill="#C084FC">Gestor de addons para L4D2 · app Windows · equipo EITO</text>
+<text x="36" y="180" font-size="15" fill="#F5F3FF"><tspan fill="#A855F7">▸ </tspan>Corregí fallos de robustez: rollback, JSON dañados y nombres seguros</text>
+<text x="36" y="208" font-size="15" fill="#F5F3FF"><tspan fill="#A855F7">▸ </tspan>Monté CI en GitHub Actions, hooks de git y flujo de ramas con PRs</text>
+<text x="36" y="236" font-size="15" fill="#F5F3FF"><tspan fill="#A855F7">▸ </tspan>Coordiné 22 PRs, triaje de 20 issues y auditorías del código</text>
+<rect x="36" y="268" width="39.6" height="26" rx="6" fill="#2A1A45" stroke="#7E22CE" stroke-opacity=".7"/><text x="55.8" y="285.7" text-anchor="middle" font-size="13" fill="#C084FC">C#</text>
+<rect x="85.6" y="268" width="78.6" height="26" rx="6" fill="#2A1A45" stroke="#7E22CE" stroke-opacity=".7"/><text x="124.9" y="285.7" text-anchor="middle" font-size="13" fill="#C084FC">.NET 10</text>
+<rect x="174.2" y="268" width="63" height="26" rx="6" fill="#2A1A45" stroke="#7E22CE" stroke-opacity=".7"/><text x="205.7" y="285.7" text-anchor="middle" font-size="13" fill="#C084FC">xUnit</text>
+<rect x="247.2" y="268" width="133.2" height="26" rx="6" fill="#2A1A45" stroke="#7E22CE" stroke-opacity=".7"/><text x="313.8" y="285.7" text-anchor="middle" font-size="13" fill="#C084FC">GitHub Actions</text>
+<rect x="390.4" y="268" width="102" height="26" rx="6" fill="#2A1A45" stroke="#7E22CE" stroke-opacity=".7"/><text x="441.4" y="285.7" text-anchor="middle" font-size="13" fill="#C084FC">PowerShell</text>
+<text x="506.4" y="287" font-size="16" fill="#A855F7">█<animate attributeName="fill-opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/></text>
+<line x1="834" y1="62" x2="834" y2="302" stroke="#2A1A45"/>
+<text x="868" y="76" font-size="10" letter-spacing="3" fill="#6B4F8F">PROJECT.META</text>
+<text x="868" y="170" font-size="13" xml:space="preserve"><tspan fill="#C084FC">estado</tspan><tspan fill="#4A3566"> ...... </tspan><tspan fill="#A855F7">en desarrollo</tspan></text>
+<text x="868" y="194" font-size="13" xml:space="preserve"><tspan fill="#C084FC">versión</tspan><tspan fill="#4A3566"> ..... </tspan><tspan fill="#F5F3FF">0.6.0 (sin publicar)</tspan></text>
+<text x="868" y="218" font-size="13" xml:space="preserve"><tspan fill="#C084FC">rol</tspan><tspan fill="#4A3566"> ......... </tspan><tspan fill="#F5F3FF">coordinación · QA · CI</tspan></text>
+<rect x="2.5" y="2.5" width="1175" height="325" rx="14" fill="none" stroke="url(#bd)" stroke-width="3" opacity=".45" filter="url(#gl)"/>
+<rect x="2.5" y="2.5" width="1175" height="325" rx="14" fill="none" stroke="url(#bd)" stroke-width="1.6"/>
+</svg>
